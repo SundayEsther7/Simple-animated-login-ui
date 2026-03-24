@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 50px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    border-color: blue;
+    justify-content: center
+
+}
+.blobs, .login {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #1634e2;
+ font-family: Arial, sans-serif;
+ max-width: 500px;
+ 
+ height: 80vh;
+ 
+}
+.login{
+    max-width:450px;
+
+    /* width: 80%;*/
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    border-radius: 12px;
+    
+}
+#title{
+    
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#form{
+    max-width: 400px;
+     position: relative;
+    margin-bottom: 20px;
+    margin: auto;
+   
+}
+label{
+    display: block;
+}
+input {
+    padding:15px 20px ;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 30px;
+    border: 0px solid white;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 20px;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    color: black;
+ }
+ 
+ input::placeholder {
+    color: grey;
+    font-size: 0.8rem;
+ }
+ #forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+
+ }
+ #forgot-password a {
+    text-decoration: none;
+    font-size: 14px;
+ }
+ #forgot-password a:hover {
+    text-decoration: underline;
+ }
+ #submit {
+    max-width: 400px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 0px solid ;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.804); */
+    margin-bottom: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    background: rgb(29, 28, 28);
+    color: white;
+    align-items: center;
+ }
+ #submit:hover {
+    box-shadow: 0 0 9px rgba(126, 119, 119, 0.662);
+ }
+ #sign-up {
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+ }
+ #sign-up a {
+    text-decoration: none;
+    cursor: pointer;
+ }
+ .blobs{
+     position: relative; /* Essential for absolute children */
+  width: 100%;       /* Or specific dimensions */
+  height: 80vh;     /* Full viewport height for this example */
+ }
+ .blob {
+  width: 120px;
+  height: 100px;
+  background-color: #2b2a2a; 
+}
+
+.blob-1 {
+  border-radius: 60% 40% 0% 0% / 60% 30% 0% 0%;
+  width: 100px;
+  height: 500px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.blob-2 {
+  background-color: #4682b4; /* SteelBlue color */
+  border-radius: 40% 60% 0% 0% / 50% 50% 0% 0%;
+  height: 400px;
+  bottom: 0;
+  right: 40%;
+  z-index: 2;
+  position: absolute;
+}
+
+.blob-3 {
+  background-color: #1de91d; 
+  border-radius: 70% 30% 0% 0% / 30% 70% 0% 0%;
+  height: 350px;
+  bottom: 0;
+  right: 5px;
+  z-index: 3;
+  position: absolute;
+}
+.blob-4 {
+  background-color: #cd3280; 
+  border-radius: 50% 50% 0% 0% / 50% 50% 0% 0%;
+  height: 250px;
+  bottom: 0;
+  right: 25%;
+  z-index: 4;
+  position: absolute;
+}
+.blob-5 {
+  background-color: #eb7777; 
+  border-radius: 10% 0% 0% 0% / 10% 0% 0% 0%;
+  height: 200px;
+  bottom: 0;
+  right: 40%;
+  z-index: 5;
+  position: absolute;
+}
